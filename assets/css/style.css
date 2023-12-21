@@ -1,6 +1,21 @@
+
+:root{
+    --cream-color:#b1b493; 
+}
+
 .main-banner{
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+}
+.text-cream{
+    color: var(--cream-color);
+}
+.text-bg-cream{
+   background-color: var(--cream-color);
+}
+.menu :hover {
+    color: var(--cream-color);
+    text-decoration: underline;
 }
