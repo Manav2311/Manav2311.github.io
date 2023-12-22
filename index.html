@@ -16,7 +16,7 @@
 
   <body data-bs-theme="dark">
     <!-- Header -->
-    <nav class="navbar navbar-expand-xl bg-body-secondary z-1">
+    <nav class="navbar navbar-expand-xl bg-body-secondary z-1 sticky-top">
       <div class="container-xl">
         <a href="javascript:void(0); index.html" class="navbar-brand h1"
           >Manav</a
@@ -59,8 +59,10 @@
     </nav>
 
     <!-- Main Banner -->
-    <section class="main-banner vh-100 position-relative ">
-      <div class="col-xl-6 text-center position-absolute top-50 start-50 translate-middle ">
+    <section class="main-banner vh-100 position-relative">
+      <div
+        class="col-xl-6 position-absolute top-50 start-0 translate-middle-y ms-5"
+      >
         <div class="">
           <h3 class="text-primary-emphasis fs-4">Manav Prajapati</h3>
           <span class="h1 text-primary-emphasis text-uppercase fs-4 mb-3"
@@ -68,7 +70,7 @@
           </span>
         </div>
         <div class="">
-          <p class="text-success-emphasis fs-4 ps-5 mb-3">
+          <p class="text-success-emphasis fs-4 mb-3">
             Where creativity meets precision, my portfolio showcases innovative
             solutions.Every project tells a story, and my portfolio narrates the
             journey of success.Experience the seamless harmony of strategy and
@@ -77,12 +79,12 @@
         </div>
         <div class="">
           <button
-            class="btn btn-outline-secondary text-uppercase text-bg-cream text-white ms-4 fs-4"
+            class="btn btn-outline-secondary text-uppercase text-bg-cream text-white fs-4"
           >
             hire me
           </button>
           <button
-            class="btn btn-outline-secondary text-uppercase text-bg-cream text-white ms-4 fs-4"
+            class="btn btn-outline-secondary text-uppercase text-bg-cream text-white fs-4"
           >
             downlod CV
           </button>
@@ -94,7 +96,7 @@
     <section class="counter bg-body-secondary p-5 text-center">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3 mb-sm-1">
             <div class="c-card">
               <div class="icon">
                 <i class="fa-solid fa-face-smile fw-semibold fs-2"></i>
@@ -103,7 +105,7 @@
               <span class="fs-2">500</span>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-3 mb-sm-1">
             <div class="c-card">
               <div class="icon">
                 <i class="fa-solid fa-briefcase fw-semibold fs-2"></i>
@@ -112,7 +114,7 @@
               <span class="fs-2">1000</span>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-3 mb-sm-1">
             <div class="c-card">
               <div class="icon">
                 <i class="fa-solid fa-mug-saucer fw-semibold fs-2"></i>
@@ -121,7 +123,7 @@
               <span class="fs-2">1500</span>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-3 mb-sm-1">
             <div class="c-card">
               <div class="icon">
                 <i class="fa-solid fa-camera fw-semibold fs-2"></i>
@@ -136,14 +138,14 @@
 
     <!-- About us -->
 
-    <section class="about">
+    <section class="about my-2">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
             <picture>
               <img
-                src="assets/images/about/1.jpg"
-                class="img-fluid img-thumbnail"
+                src="assets/images/about/2.jpg"
+                class="img-fluid"
                 alt="..."
               />
             </picture>
@@ -155,30 +157,69 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
                 obcaecati placeat, ducimus cum quisquam suscipit nisi adipisci
                 quia quos incidunt, ab repudiandae commodi? Minima quidem
-                laudantium libero dolore molestiae corrupti, officia nisi
-                reprehenderit qui consectetur doloremque, possimus quis. Ad
-                inventore esse exercitationem excepturi eaque magni natus itaque
-                illo at quam.
+                laudantium libero dolore molestiae corrupti
               </p>
-              <ul>
-                <li class="list-unstyled ms-auto">Name : Manav Prajapati</li>
-                <li class="list-unstyled ms-auto">
-                  Date of birth : November23,2005
-                </li>
-                <li class="list-unstyled ms-auto">
-                  Address : San Francisco CA 97987 USA
-                </li>
-                <li class="list-unstyled ms-auto">Pincode : 395005</li>
-                <li class="list-unstyled ms-auto">Phone : 9327424663</li>
-                <li class="list-unstyled ms-auto">
-                  Email : manavprajapati141@gmail.com
-                </li>
-              </ul>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li class="list-unstyled ms-auto">
+                      Name : Manav Prajapati
+                    </li>
+                    <li class="list-unstyled ms-auto">
+                      Date of birth : November23,2005
+                    </li>
+                    <li class="list-unstyled ms-auto">
+                      Address : San Francisco CA 97987 USA
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6">
+                  <ul>
+                    <li class="list-unstyled ms-auto mt-auto">
+                      Pincode : 395005
+                    </li>
+                    <li class="list-unstyled ms-auto mt-auto">
+                      Phone : 9327424663
+                    </li>
+                    <li class="list-unstyled ms-auto mt-auto fs-6">
+                      Email : manavprajapati141@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Skils -->
+    <section class="skils bg-body-secondary">
+      <div class="container bg-body-secondary">
+        <div class="row">
+          <div class="col-md-6">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-top text-center ">
+                    <div class="progerss">
+                      <div class="progress-bar">
+                        <img src="" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- counter -->
     <script src="assets/js/counter.js"></script>
     <!-- font awosome -->
