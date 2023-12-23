@@ -1,6 +1,7 @@
 
 :root{
     --cream-color:#b1b493; 
+    --aqua:aqua;
 }
 
 .main-banner{
@@ -19,35 +20,11 @@
     color: var(--cream-color);
     text-decoration: underline;
 }
-.progress-bar {
-    width: 100px;
-    height: 100px;
-    background-color: #f3f3f3;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: relative;
-  }
-  .progress-bar::before {
-      content: "";
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      width: 5px;
-      height: 90%;
-      background-color: #0092f3;
-      border-radius: 50%;
-    }
-    @keyframes progress {
-      0% {
-        width: 0;
-        height: 0;
-      }
-      100% {
-        width: 80%;
-        height: 80%;
-      }
-    }
-    
-    .progress-bar::before {
-      animation: progress 2s ease-out forwards;
-    }
+.progress {
+  border: 10px solid var(--aqua);
+  border-radius: 50%;
+} 
+.progress-bar-bar {
+  /* border: 10px solid var(--aqua); */
+  border-radius: 50%;
+}
