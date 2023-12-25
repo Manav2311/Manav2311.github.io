@@ -1,30 +1,119 @@
-
-:root{
-    --cream-color:#b1b493; 
-    --aqua:aqua;
+:root {
+  --cream-color: #b1b493;
+  --aqua: aqua;
+  --light-green-color :#B9EEC9;
+  --dark-green-color :#1ca345;
 }
 
-.main-banner{
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+.main-banner {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-.text-cream{
-    color: var(--cream-color);
+.text-cream {
+  color: var(--cream-color);
 }
-.text-bg-cream{
-   background-color: var(--cream-color);
+.text-bg-cream {
+  background-color: var(--cream-color);
+}
+.text-light-green{
+  color: var(--light-green-color);
+}
+.text-bg-light-green{
+  background-color: var(--light-green-color);
 }
 .menu :hover {
-    color: var(--cream-color);
-    text-decoration: underline;
+  color: var(--cream-color);
+  text-decoration: underline;
 }
 .progress {
-  border: 10px solid var(--aqua);
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  color: #fff;
   border-radius: 50%;
-} 
-.progress-bar-bar {
-  /* border: 10px solid var(--aqua); */
-  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: var(--light-green-color);
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+
+.progress::after {
+  content: "";
+}
+
+.progress .title {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+.progress .title img{
+  object-fit: cover;
+}
+.progress .overlay {
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--light-green-color);
+}
+
+.progress .left,
+.progress .right {
+  width: 50%;
+  height: 100%;
+  border: 10px solid var(--dark-green-color);
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+
+.progress .left {
+  animation: load1 1s linear forwards;
+}
+
+.progress:nth-of-type(2) .right,
+.progress:nth-of-type(3) .right {
+  animation: load2 0.5s linear forwards 1s;
+}
+
+.progress:last-of-type .right,
+.progress:first-of-type .right {
+  animation: load3 0.8s linear forwards 1s;
+}
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes load2 {
+  0% {
+    z-index: -2;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: -2;
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    z-index: -2;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: -2;
+    transform: rotate(315deg);
+  }
 }
