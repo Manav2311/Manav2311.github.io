@@ -57,12 +57,12 @@
   <section class="main-banner vh-100 position-relative" id="home">
     <div class="col-xl-6 position-absolute top-50 start-0 translate-middle-y ms-5">
       <div class="">
-        <h3 class="text-primary-emphasis fs-4">Manav Prajapati</h3>
-        <span class="h1 text-primary-emphasis text-uppercase fs-4 mb-3">I'm a Full-Stack Developer
+        <h3 class=" text-dark  fs-4">Manav Prajapati</h3>
+        <span class="h1 text-dark  fs-4 mb-3">I'm a Full-Stack Developer
         </span>
       </div>
       <div class="">
-        <p class="text-success-emphasis fs-4 mb-3">
+        <p class="text-dark  fs-4 mb-3">
           Where creativity meets precision, my portfolio showcases innovative
           solutions.Every project tells a story, and my portfolio narrates the
           journey of success.Experience the seamless harmony of strategy and
@@ -70,16 +70,39 @@
         </p>
       </div>
       <div class="">
-        <button class="btn btn-outline-secondary text-uppercase text-bg-cream text-white fs-4">
+        <button class="btn btn-outline-dark  text-uppercase text-bg-light-green fs-4">
           hire me
         </button>
-        <button class="btn btn-outline-secondary text-uppercase text-bg-cream text-white fs-4">
+        <!-- <button class="btn btn-outline-dark  text-uppercase text-bg-light-green fs-4">
           downlod CV
+        </button> -->
+        <button type="button" class="btn btn-outline-dark text-bg-light-green fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Downloed CV
         </button>
       </div>
-    </div>
+
+
   </section>
 
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- counter -->
   <section class="counter bg-body-secondary p-5 text-center">
     <div class="container">
@@ -134,7 +157,7 @@
         </div>
         <div class="col-sm-6 d-flex">
           <div class="">
-            <span class="h2 text-uppercase d-block p-3">about me</span>
+            <span class="h2 text-uppercase d-block p-3 text-primary-emphasis">about me</span>
             <p class="ps-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
               obcaecati placeat, ducimus cum quisquam suscipit nisi adipisci
@@ -179,7 +202,7 @@
   <!-- Skils -->
   <section class="skils bg-body-secondary" id="skills">
     <div class="text-center container ">
-      <span class="h1">My Skills</span>
+      <span class="h1 text-primary-emphasis">My Skills</span>
       <span class="h2"></span>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum aliquid laboriosam, necessitatibus reiciendis
         nostrum porro beatae aperiam rem animi nulla corporis eaque excepturi iure tempore. Error libero eveniet
@@ -290,28 +313,28 @@
   <!-- Resume -->
   <section class="container py-5 ">
     <div class="text-center">
-      <h2 class="text-uppercase ">resume</h2>
+      <h2 class="text-uppercase text-primary-emphasis ">resume</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus neque voluptatem nobis incidunt odio
         aperiam, itaque explicabo quaerat quia totam dolorum sed, placeat eveniet laborum doloribus voluptatibus ipsam
         deserunt!</p>
     </div>
     <div class="row">
       <div class="col-6">
-        <span class="h2 text-capitalize">education</span>
+        <img src="assets/images/dark.png" alt="">
+      </div>
+      <div class="col-6">
+        <span class="h2 text-capitalize font-monospace ">education</span>
         <p></p>
         <ul>
-          <li>BCA-Bachelor of Computer Applications : On Going </li>
-          <li>12th standard : Passed in year 2023 with 54% </li>
-          <li>10th standard : Passed in year 2020 with 50% </li>
+          <li class="font-monospace ">BCA-Bachelor of Computer Applications : On Going </li>
+          <li class="font-monospace ">12th standard : Passed in year 2023 with 54% </li>
+          <li class="font-monospace ">10th standard : Passed in year 2020 with 50% </li>
         </ul>
-      </div>
-
-      <div class="col-6">
         <span class="h2 text-capitalize">courses</span>
         <p></p>
         <ul>
-          <li class="text-capitalize ">Full-Stack-Development : on going from Red and White multimedia education</li>
-          <li class="text-capitalize ">NCC traning : For 4 years from ANN (ALUMNI ASSOCIATION OF NCC CADETS),<br> Now UTA (Major Unmesh training academy)</li>
+          <li class="text-capitalize font-monospace ">Full-Stack-Development : on going from Red and White multimedia education</li>
+          <li class="text-capitalize font-monospace ">NCC traning : For 4 years from ANN (ALUMNI ASSOCIATION OF NCC CADETS),<br> Now UTA (Major Unmesh training academy)</li>
         </ul>
       </div>
     </div>
@@ -324,7 +347,7 @@
       <div class="text-center">
         <span class="h1 text-primary-emphasis">Services</span>
         <span class="h4 text-capitalize d-block fs-1 display-1">We do awosome services for our clients</span>
-        <p class="fs-3 display-3">Empowering businesses with seamless IT solutions, from network setups to data
+        <p class="fs-5 display-6  font-monospace ">Empowering businesses with seamless IT solutions, from network setups to data
           security, our computer services ensure uninterrupted digital operations.</p>
         <div class="row mb-4">
           <div class="col-md-6 col-lg-3">
@@ -414,14 +437,14 @@
       </div>
     </div>
   </section>
-  <!--  -->
-  <section class="">
+  <!-- sub-banner -->
+  <section class="sub-banner">
     <div class="container ">
       <div class="row justify-content-between ">
         <div class="col-md-8 d-flex align-items-center">
           <div class="w-100 py-4">
             <span class="h2">Do you have a project on your mind?</span>
-            <p>
+            <p class="font-monospace ">
               A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
               paradisematic country, in which roasted parts of sentences fly.
             </p>
@@ -439,10 +462,10 @@
 
   <!-- Projects -->
   <section class="projects bg-body-secondary " id="projects">
-    <div class="container  text-center ">
+    <div class="container  text-center py-4 ">
       <span class="h2 text">Projects</span>
 
-      <div class="row my-2 ">
+      <div class="row my-2 mx-2  ">
         <div class="col-md-4 proj-1">
           <a href="https://manav2311.github.io/" target="_blank">
             <img src="assets/images/Project images/portfolio.png" alt="" class="img-fluid  img-thumbnail ">
@@ -468,15 +491,17 @@
 
   <!-- testimonials -->
   <section class="testimonials" id="testimonials">
-    <div class="container  text-center  py-3 ">
-      <span class="h2 text">Testimonials</span>
-      <span class="d-block h4">What Client say about us?</span>
-      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
+    <div class="container  text-center py-3 ">
+      <span class="h2 text-primary-emphasis ">Testimonials</span>
+      <span class="d-block h4 py-2 ">What Client say about us?</span>
+      <p class="font-monospace h5 py-1 ">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
       <div class="row">
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
+              <p>
               "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly."
+              </p>
             </div>
             <div class="card-footer bg-secondary-subtle">
               <div class="row d-flex justify-content-between align-items-center">
@@ -537,8 +562,7 @@
   <section class="contact-us">
     <div class="container ">
       <div class="row justify-content-center mb-5 pb-3">
-  <span class="h4 ">contact us</span>        
-
+         <span class="h4 ">contact us</span>
       </div>
     </div>
   </section>
