@@ -1,4 +1,5 @@
 :root {
+  --black:black;
   --cream-color: #b1b493;
   --aqua: aqua;
   --light-green-color :#B9EEC9;
@@ -23,9 +24,14 @@
 .text-bg-light-green{
   background-color: var(--light-green-color);
 }
+.text-dark-green{
+  color: var(--dark-green-color);
+}
+.text-bg-dark-green{
+  background-color: var(--dark-green-color);
+}
 .menu :hover {
   color: var(--cream-color);
-  text-decoration: underline;
 }
 .progress {
   width: 200px;
@@ -117,7 +123,7 @@
     transform: rotate(315deg);
   }
 }
-.person .img{
+.person img{
   border-radius: 50%;
 }
 .proj-1{
@@ -131,4 +137,7 @@
 }
 .proj-2 :hover img{
   opacity: .8;
+}
+.world-web img{
+  width: 50px;
 }
