@@ -117,3 +117,6 @@
     transform: rotate(315deg);
   }
 }
+.person .img{
+  border-radius: 50%;
+}

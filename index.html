@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Manav-portfolio</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- bootstrap css-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- counter css -->
@@ -26,22 +28,22 @@
       <div class="collapse navbar-collapse menu" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="javascript:void(0); #main-banner" class="nav-link">Home</a>
+            <a href="#home javascript:void(0);" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link">Blogs</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="javascript:void(0);" class="nav-link">Projects</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0);" class="nav-link">Contect Us</a>
@@ -52,7 +54,7 @@
   </nav>
 
   <!-- Main Banner -->
-  <section class="main-banner vh-100 position-relative">
+  <section class="main-banner vh-100 position-relative" id="home">
     <div class="col-xl-6 position-absolute top-50 start-0 translate-middle-y ms-5">
       <div class="">
         <h3 class="text-primary-emphasis fs-4">Manav Prajapati</h3>
@@ -124,7 +126,7 @@
 
   <!-- About us -->
 
-  <section class="about my-2">
+  <section class="about my-2" id="about">
     <div class="container">
       <div class="row align-items-center justify-content-between  ">
         <div class="col-sm-6 align-self-center ">
@@ -175,7 +177,7 @@
   </section>
 
   <!-- Skils -->
-  <section class="skils bg-body-secondary">
+  <section class="skils bg-body-secondary" id="skills">
     <div class="text-center container ">
       <span class="h1">My Skills</span>
       <span class="h2"></span>
@@ -285,7 +287,7 @@
     </div>
   </section>
 
-  <!-- resume -->
+  <!-- Resume -->
   <section class="container">
     <div class="text-center">
       <h2 class="text-uppercase ">resume</h2>
@@ -296,16 +298,31 @@
     <div class="row">
       <div class="col-6">
         <span class="h2 text-capitalize">education</span>
-        
+        <p></p>
+        <ul>
+          <li>BCA-Bachelor of Computer Applications : On Going </li>
+          <li>12th standard : Passed in year 2023 with 54% </li>
+          <li>10th standard : Passed in year 2020 with 50% </li>
+        </ul>
       </div>
+
+      <div class="col-6">
+        <span class="h2 text-capitalize">corcess</span>
+        <p></p>
+        <ul>
+          <li class="text-capitalize ">Full-Stack-Development : on going from Red and White multimedia education</li>
+          <li class="text-capitalize ">NCC traning : from ANN (ALUMNI ASSOCIATION OF NCC CADETS),<br> Now UTA</li>
+        </ul>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="services bg-body-secondary ">
+  <section class="services bg-body-secondary py-2" id="services">
     <div class="container">
       <div class="text-center">
-        <span class="h1 text-primary-emphasis">Servicer</span>
+        <span class="h1 text-primary-emphasis">Services</span>
         <span class="h4 text-capitalize d-block fs-1 display-1">We do awosome services for our clients</span>
         <p class="fs-3 display-3">Empowering businesses with seamless IT solutions, from network setups to data
           security, our computer services ensure uninterrupted digital operations.</p>
@@ -397,14 +414,71 @@
           </div>
         </div>
         <div class="col-md-4">
-
+          <img src="assets/images/about/3.png" alt="" class="img-fluid ">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
+  <section class="projects bg-body-secondary " id="projects">
+    <div class="container  text-center ">
+      <span class="h2 text">Projects</span>
 
+      <div class="row my-2 ">
+        <div class="col-md-4">
+          <a href="https://manav2311.github.io/" target="_blank">
+            <img src="" alt="" class="img-fluid  img-thumbnail">
+          </a>
+          <span>Project-1</span>
+          <p> portfolio</p>
+        </div>
+        <div class="col-md-4">
+          <a href=" https://manav2311.github.io/admin-pannel/" target="_blank">
+            <img src="" alt="" class="img-fluid  img-thumbnail">
+          </a>
+          <span>Project-2</span>
+          <p> Admin panal</p>
+        </div>
+        <div class="col-md-4">
+          <span>Projects</span>
+          <p class="h5 text-uppercase ">coming Soon...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container  text-center  py-3 ">
+      <span class="h2 text">Testimonials</span>
+      <p>What Client say about us?</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere blanditiis sapiente impedit in mollitia
+              iusto velit nulla expedita reprehenderit vitae ipsa nisi dignissimos quia quas, necessitatibus voluptate
+              quam, laborum sequi."
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-6">
+                  <div class=" w-50 person">
+                    <img src="assets/images/person/person1.jpg" alt="" class="img-fluid img">
+                  </div>
+                </div>
+                <div class="col-6 text-center ">
+                  <p>- KapilDev Singh </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- counter -->
   <script src="assets/js/counter.js"></script>
   <!-- font awosome -->
@@ -414,5 +488,4 @@
   <!-- js -->
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
