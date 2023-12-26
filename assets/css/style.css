@@ -120,3 +120,15 @@
 .person .img{
   border-radius: 50%;
 }
+.proj-1{
+  transition: all 200ms ease-out;
+}
+.proj-1 :hover img{
+  opacity: .8;
+}
+.proj-2{
+  transition: all 200ms ease-out;
+}
+.proj-2 :hover img{
+  opacity: .8;
+}
